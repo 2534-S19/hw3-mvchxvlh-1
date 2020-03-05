@@ -167,7 +167,7 @@ void changeBoosterpackLED(unsigned int count) {
 // The button state machine should return true or false to indicate a completed, debounced button press.
 bool fsmBoosterpackButtonS1(unsigned char buttonhistory)
 {
-    typedef enum {Make, Break} state;//make the typedef and its instance in here, then copy the github stuff
+    typedef enum {Make, Break} state;
 
     static state s1state = Break;
     bool pressed = false;
